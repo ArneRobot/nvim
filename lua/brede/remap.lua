@@ -14,9 +14,4 @@ vim.keymap.set("n", "<leader>d", "\"_d")
 vim.keymap.set("v", "<leader>y", '"+y')
 
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>")
---vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left>")
-
--- autoclose {}
---vim.keymap.set("i", "{<CR>", "{<CR>}<ESC>O")
---vim.keymap.set("i", "{<Space>", "{<Space><Space>}<ESC>hi")
 

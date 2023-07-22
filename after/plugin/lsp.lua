@@ -1,3 +1,4 @@
+
 local lsp = require('lsp-zero').preset({
     name = 'minimal',
     set_lsp_keymaps = true,
@@ -7,6 +8,14 @@ local lsp = require('lsp-zero').preset({
 
 lsp.nvim_workspace()
 lsp.setup()
+
+local cmp = require('cmp')
+
+cmp.setup({
+    mapping = {
+        ['<CR>'] = cmp.mapping.confirm({select = false}),
+    }
+})
 
 vim.diagnostic.config({
     virtual_text = true,
