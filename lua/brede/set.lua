@@ -8,6 +8,9 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 vim.opt.wrap = false
 
 vim.opt.hlsearch = false
@@ -21,6 +24,8 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.swapfile = false
 vim.opt.backup = false

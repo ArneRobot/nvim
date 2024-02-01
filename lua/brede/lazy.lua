@@ -15,10 +15,13 @@ require("lazy").setup({
 
     {
         'nvim-telescope/telescope.nvim',
-        tag = '0.1.1',
-        dependencies = { {'nvim-lua/plenary.nvim'} }
+        tag = '0.1.5',
+        dependencies = { {'nvim-lua/plenary.nvim'}, {'nvim-telescope/telescope-live-grep-args.nvim'} }
     },
-    'nvim-treesitter/nvim-treesitter',
+    config = function()
+        require("telescope").load_extension("live_grep_args")
+    end,
+        'nvim-treesitter/nvim-treesitter',
     'nvim-treesitter/playground',
     {
         'VonHeikemen/lsp-zero.nvim',
@@ -59,6 +62,7 @@ require("lazy").setup({
 },
 "mbbill/undotree",
 "tpope/vim-fugitive",
+"nvim-lua/plenary.nvim",
 "theprimeagen/harpoon",
 "jiangmiao/auto-pairs",
 }, {})
