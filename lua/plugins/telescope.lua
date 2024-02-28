@@ -10,7 +10,7 @@ return {
             { '<leader>/', function() require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown {
                 previewer = false,
             }) end, desc = "Current Buffer Fuzzy Find" },
-            { '<leader>pg', ":lua function() require('telescope').extentions.live_grep_args.live_grep_args()<CR>", desc = "Live Grep" },
+            { '<leader>pg', function() require('telescope.builtin').live_grep() end, desc = "Live Grep (search file names)" },
         }
     }
 }
