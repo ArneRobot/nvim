@@ -1,1 +1,1 @@
-require("brede")
+require("config")
