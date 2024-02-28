@@ -65,4 +65,11 @@ require("lazy").setup({
 "nvim-lua/plenary.nvim",
 "theprimeagen/harpoon",
 "jiangmiao/auto-pairs",
+{
+    'saecki/crates.nvim',
+    tag = 'stable',
+    config = function()
+        require('crates').setup()
+    end,
+},
 }, {})
