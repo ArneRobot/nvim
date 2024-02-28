@@ -20,6 +20,10 @@ return {
 
             -- Set transparency for the terminal
             vim.cmd[[ hi TermNormal guibg=NONE ctermbg=NONE ]]
+
+            -- SignColumn transparent
+            vim.cmd('highlight SignColumn guibg=none ctermbg=none')
+
         end
     }
 }
