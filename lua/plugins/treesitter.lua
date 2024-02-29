@@ -14,16 +14,16 @@ return {
                 build = function()
                     pcall(vim.cmd, 'MasonUpdate')
                 end,
-            },
-            {'williamboman/mason-lspconfig.nvim'}, -- Optional
+                },
+                {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-            -- Autocompletion
-            {'hrsh7th/nvim-cmp'},     -- Required
-            {'hrsh7th/cmp-nvim-lsp'}, -- Required
-            {'hrsh7th/cmp-buffer'},       -- Optional
-            {'hrsh7th/cmp-path'},         -- Optional
-            {'L3MON4D3/LuaSnip'},     -- Required
-            {'rafamadriz/friendly-snippets'}, -- Optional
+                -- Autocompletion
+                {'hrsh7th/nvim-cmp'},     -- Required
+                {'hrsh7th/cmp-nvim-lsp'}, -- Required
+                {'hrsh7th/cmp-buffer'},       -- Optional
+                {'hrsh7th/cmp-path'},         -- Optional
+                {'L3MON4D3/LuaSnip'},     -- Required
+                {'rafamadriz/friendly-snippets'}, -- Optional
             }
         }
     }

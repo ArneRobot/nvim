@@ -13,6 +13,7 @@ return {
         config = function()
             vim.keymap.set("n", "<leader>ga", ":Git add %<CR>", {})
             vim.keymap.set("n", "<leader>gc", ":Git commit -m ''<left>", {})
+            vim.keymap.set("n", "<leader>gl", ":Git log<CR>", {})
         end
     }
 }
