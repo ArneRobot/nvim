@@ -25,5 +25,11 @@ return {
             vim.cmd('highlight SignColumn guibg=none ctermbg=none')
 
         end
+    },
+    {
+        'nvim-lualine/lualine.nvim',  -- statusline
+        config = function ()
+            require("lualine").setup()
+        end,
     }
 }
