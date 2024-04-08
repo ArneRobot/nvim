@@ -1,14 +1,10 @@
 return {
     "m4xshen/autoclose.nvim",
     config = function ()
-        require("autoclose").setup()
+        require("autoclose").setup({
+            keys = {
+                ["'"] = { disabled_filetypes = {"rust"} }
+            }
+        })
     end
-    --[[ skapte mange feilmeldinger
-    {
-        "jiangmiao/auto-pairs",
-        event = "InsertEnter",
-        config = function()
-        end,
-    },
-    ]]
 }
