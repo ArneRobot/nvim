@@ -93,6 +93,10 @@ return {
                             end
                         end, {3}), i(3), i(4)})),
 
+                        s("print", fmt([[
+                        println!("{}", {});
+                        ]], {i(1, "text"), i(2, "args")})),
+
                         s("arg", fmt([[
                         #[derive(Parser)]
                         struct Args {{
